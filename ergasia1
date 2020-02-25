@@ -1,0 +1,17 @@
+infile=open("keimeno.txt",'r')
+
+infile.close()
+list=["Takis","Makis","Giorgos","Mitsos","Michalis"]
+vowels = "AEIOUYaeiouy"
+for i in range(0,len(list)):
+    reversedWord=""
+    result=""
+    for ch in list[i]:
+        reversedWord=ch+reversedWord
+    for letter in reversedWord:
+        if letter not in vowels: 
+          result=result + letter 
+            
+    print("The reversed word is " + reversedWord + ".")
+    print("The reversed word without vowels is " + result + ".")
+    
